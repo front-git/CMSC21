@@ -15,13 +15,13 @@ int main(){
         scanf("%d", &size);
         /*Code determining the output square 
         in terms of its rows*/
-        for(row = 1 ;row <= size ; row++){
+        for(row = 0 ;row <= size ; row++){
             /*Code determining the output square 
             in terms of its columns*/
-            for(column = 1 ;column <= size ;column++){
+            for(column = 0 ;column <= size ;column++){
                 /*Code which prints the output hollow square 
                 with '*' as its borders*/
-                if (row == 1 || row == size || column == 1 || column == size){
+                if (row == 0 || row == size || column == 0 || column == size){
                     printf("*");
                 }else{
                     printf(" ");
