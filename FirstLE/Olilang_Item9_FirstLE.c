@@ -29,19 +29,15 @@ int main(){
             }
             printf("\n");
         }
-        /*This part of the code does not work properly.
-        I am admittedly unable to solve this part of the code
-        as I have trouble understanding how the char data type
-        works in C. I apologize for not raising this concern
-        during your class or by email, Ma'am.*/
         printf("Print another square? Enter y or n: ");
-        scanf("%c", &cont);
+        scanf(" %c", &cont);
         if (cont == 'n'){
             printf("END");
-        }else if (cont != 'y' || cont != 'n'){
+        }else if (cont == 'x'){
             printf("Not a valid choice. \n");
+            
             printf("Print another square? Enter y or n: ");
-            continue;
+            scanf(" %c", &cont);
         }
             
 }
